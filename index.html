@@ -204,8 +204,6 @@
       margin: 0 15px;
     }
 
-
-
     .arrow-text {
       position: static;
       margin-top: 2rem;
@@ -219,6 +217,35 @@
     .welcome-text p {
       font-size: 1rem;
     }
+  }
+
+  /* 暗黑模式适配 */
+  [data-md-color-scheme="slate"] .welcome-page {
+    background-color: #1a1a2e;
+    border-color: #4a7c59;
+  }
+
+  [data-md-color-scheme="slate"] .main-title,
+  [data-md-color-scheme="slate"] .chinese-title,
+  [data-md-color-scheme="slate"] .welcome-text h1 {
+    color: #6b9b7a;
+  }
+
+  [data-md-color-scheme="slate"] .welcome-text p {
+    color: #b0b0b0;
+  }
+
+  [data-md-color-scheme="slate"] .eye {
+    background-color: #2a2a3e;
+    border-color: #555;
+  }
+
+  [data-md-color-scheme="slate"] .pupil {
+    background-color: #6b9b7a;
+  }
+
+  [data-md-color-scheme="slate"] .eyebrow {
+    background-color: #555;
   }
 </style> <div class=welcome-page> <div class=title-container> <h1 class=main-title>WANT TO EXCHANGE KNOWLEDGE<br>ABOUT INDUSTRIAL ENGINEERING ARCHITECTURE?</h1> <h2 class=chinese-title>想来一起交流工业工程架构师的知识吗？</h2> </div> <div class=eye-character> <div class=eyebrows> <div class="eyebrow left"></div> <div class="eyebrow right"></div> </div> <div class=big-eyes> <div class=eye> <div class=pupil></div> </div> <div class=eye> <div class=pupil></div> </div> </div> </div> <div class=welcome-text> <h1><span style="font-weight: normal;">Welcome to</span><br>H4nk 的工业工程架构师手册</h1> <p>实践，总结，开源</p> <a href=story/story1/ class=btn>开始探索</a> </div> </div> <script>
   document.addEventListener('DOMContentLoaded', function() {
