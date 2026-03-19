@@ -3,6 +3,8 @@ site_description: 工业工程架构师手册
 site_author: H4nk
 site_url: https://h4nkx.github.io/
 
+docs_dir: docs
+
 repo_name: H4nkX/H4nkX.github.io
 repo_url: https://github.com/H4nkX/H4nkX.github.io
 
@@ -10,12 +12,7 @@ copyright: Copyright &copy; 2026 H4nk
 
 nav:
   - 首页: index.md
-  - 博客:
-    - 博客首页: blog/index.md
-    - 分类:
-      - 随笔: blog/category/随笔/index.md
-    - 归档:
-      - 2024: blog/archive/2024/index.md
+  - About: about/index.md
   - 故事:
     - 故事首页: story/index.md
     - 故事1: story/story1/index.md
@@ -23,39 +20,54 @@ nav:
     - 故事3: story/story3/index.md
   - AI专栏:
     - AI专栏首页: ai/index.md
-  - 云筹:
-    - 云筹首页: yunchou/index.md
+  - 运筹:
+    - 运筹首页: yunchou/index.md
     - 教学: yunchou/teach/index.md
   - 配置: config/index.md
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: 切换到深色模式
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: 切换到浅色模式
   
   features:
+    # 导航系统功能
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tabs.fade
+    - navigation.tabs.scroll
     - navigation.sections
     - navigation.expand
     - navigation.indexes
     - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - navigation.path
+    - navigation.instant
+    - navigation.prune
+    - navigation.sitemap
+    - navigation.hover.preview
+    - navigation.hover.delay
+    - navigation.hover.refresh
+    
+    # 搜索功能
     - search.suggest
     - search.highlight
     - search.share
+    
+    # 内容功能
     - toc.follow
     - content.action.edit
     - content.action.view
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    
+    # 界面功能
+    - header.autohide
 
   language: zh
   
@@ -63,40 +75,76 @@ theme:
     repo: fontawesome/brands/github
 
 markdown_extensions:
+  # 代码相关扩展
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - admonition
-  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - attr_list
-  - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - codehilite:
+      linenums: true
+  
+  # 内容组织扩展
+  - admonition
+  - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
   - toc:
       permalink: true
+  - def_list
+  - abbr
+  - footnotes
+  - tables
+  
+  # 格式美化扩展
+  - attr_list
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
+  # 数学公式扩展
+  - pymdownx.arithmatex:
+      generic: true
+  
+  # 高级功能扩展
+  - pymdownx.keys
+  - pymdownx.escapeall:
+      hardbreak: true
+      nbsp: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.critic
 
 plugins:
   - search
   - minify:
       minify_html: true
+      minify_css: true
+      minify_js: true
+
+# 性能优化配置
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js
+
+# 缓存控制
+extra:
+  cache:
+    enabled: true
+    duration: 86400  # 24小时
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/H4nkX
-    - icon: fontawesome/brands/weixin
-      link: https://mp.weixin.qq.com/
 
   analytics:
     provider: google

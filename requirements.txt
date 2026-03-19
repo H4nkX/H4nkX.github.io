@@ -1,3 +1,9 @@
 mkdocs==1.6.1
 mkdocs-material==9.7.5
 mkdocs-minify-plugin>=0.3.0
+mkdocs-blog-plugin>=0.4.0
+mkdocs-git-revision-date-plugin>=0.11.0
+mkdocs-git-authors-plugin>=0.7.0
+mkdocs-paginate-plugin>=0.3.0
+mkdocs-section-index>=0.3.4
+mkdocs-kroki-plugin>=0.7.0
