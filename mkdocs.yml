@@ -20,7 +20,7 @@ nav:
     - 实记3: story/story3/index.md
   - AI:
     - 关于AI: ai/index.md
-    - Prompt Inject: ai/prompt-inject.md
+    - Prompt Inject for Expert dataset: ai/prompt-inject.md
   - 运筹学:
     - 关于运筹学: yunchou/index.md
     - 教学: yunchou/teach/index.md
