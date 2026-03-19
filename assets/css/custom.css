@@ -1,1 +1,9 @@
+/* 隐藏编辑和查看按钮的 SVG 图标 */
+.content-action svg {
+  display: none !important;
+}
+
+/* 可选：如果需要隐藏整个按钮 */
+.content-action {
+  display: none !important;
 }
