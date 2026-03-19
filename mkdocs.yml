@@ -60,8 +60,6 @@ theme:
     
     # 内容功能
     - toc.follow
-    - content.action.edit
-    - content.action.view
     - content.code.copy
     - content.code.select
     - content.code.annotate
