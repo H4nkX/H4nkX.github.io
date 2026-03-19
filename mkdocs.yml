@@ -136,8 +136,12 @@ plugins:
 # 性能优化配置
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js
-  - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - javascripts/katex.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - assets/css/custom.css
 
 # 缓存控制
 extra:
@@ -145,14 +149,9 @@ extra:
     enabled: true
     duration: 86400  # 24小时
 
-extra:
-
   analytics:
     provider: google
     property: G-XXXXXXXXXX
-
-extra_css:
-  - assets/css/custom.css
 
 watch:
   - docs
