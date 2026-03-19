@@ -13,15 +13,15 @@ copyright: Copyright &copy; 2026 H4nk
 nav:
   - 首页: index.md
   - About: about/index.md
-  - 故事:
-    - 故事首页: story/index.md
-    - 故事1: story/story1/index.md
-    - 故事2: story/story2/index.md
-    - 故事3: story/story3/index.md
-  - AI专栏:
-    - AI专栏首页: ai/index.md
-  - 运筹:
-    - 运筹首页: yunchou/index.md
+  - 实记:
+    - 关于实记: story/index.md
+    - 实记1: story/story1/index.md
+    - 实记2: story/story2/index.md
+    - 实记3: story/story3/index.md
+  - AI:
+    - 关于AI: ai/index.md
+  - 运筹学:
+    - 关于运筹学: yunchou/index.md
     - 教学: yunchou/teach/index.md
   - 配置: config/index.md
 
