@@ -2,14 +2,16 @@ name: ci
 on:
   push:
     branches:
-      - gh-pages  # 设置默认分支为 gh-pages
+      - main  # 主分支，用于开发
   pull_request:
     branches:
-      - gh-pages
+      - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
@@ -29,3 +31,10 @@ jobs:
 
       - name: Build site
         run: mkdocs build --site-dir ./site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages  # 部署到 gh-pages 分支
