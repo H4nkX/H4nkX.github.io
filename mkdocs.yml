@@ -34,6 +34,10 @@ nav:
   - 编程:
     - 关于编程: programming/index.md
     - IBM TM1 规则语言: programming/IBM-TM1.md
+    - RPA 机器人流程自动化: programming/rpa.md
+  - 数据分析:
+    - 关于数据分析: data-analysis/index.md
+    - Power BI 速成手册: data-analysis/Power BI 速成手册.md
   - 配置: config/index.md
 
 theme:
