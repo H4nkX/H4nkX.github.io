@@ -31,6 +31,9 @@ nav:
   - 认知随记:
     - 关于认知随记: renzhi/index.md
     - 工业工程架构师：对抗系统的熵增: renzhi/shangzeng.md
+  - 编程:
+    - 关于编程: programming/index.md
+    - IBM TM1 规则语言: programming/IBM-TM1.md
   - 配置: config/index.md
 
 theme:
