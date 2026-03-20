@@ -137,7 +137,7 @@ plugins:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
-  - javascripts/katex.js
+  - javascripts/math-image.js
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
