@@ -28,6 +28,9 @@ nav:
   - 概率论:
     - 关于概率论: gailvlun/index.md
     - 看见概率: gailvlun/seeing-theory.md
+  - 认知随记:
+    - 关于认知随记: renzhi/index.md
+    - 工业工程架构师：对抗系统的熵增: renzhi/shangzeng.md
   - 配置: config/index.md
 
 theme:
