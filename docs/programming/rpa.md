@@ -99,10 +99,10 @@ RPA（Robotic Process Automation）是通过软件机器人模拟人类在计算
 
 | 场景 | Agent（AI 代理） | RPA |
 |------|------------------|-----|
-| **可审计、可回溯** | ❌ 做不到 | ✅ 完全可记录 |
-| **无头服务器运行** | ❌ 需要界面 | ✅ 后台静默执行 |
-| **批量处理 1000 次** | ❌ 几小时 | ✅ 几分钟 |
-| **对接系统接口** | ❌ 能力有限 | ✅ 可以对接 |
+| **可审计、可回溯** | 做不到 | 完全可记录 |
+| **无头服务器运行** | 需要界面 | 后台静默执行 |
+| **批量处理 1000 次** | 几小时 | 几分钟 |
+| **对接系统接口** | 能力有限 | 可以对接 |
 
 ### 核心结论
 
@@ -114,91 +114,12 @@ RPA（Robotic Process Automation）是通过软件机器人模拟人类在计算
 
 ---
 
-## 四、典型 RPA 应用场景
 
-### 财务领域
-- 自动从 ERP 下载报表
-- 发票识别与录入
-- 银行对账
-- 费用报销审核
 
-### 人力资源
-- 简历筛选与整理
-- 员工信息录入
-- 考勤数据处理
-
-### 供应链
-- 订单自动处理
-- 库存数据同步
-- 物流信息跟踪
-
-### IT 运维
-- 系统巡检
-- 日志收集分析
-- 定时任务执行
-
----
-
-## 五、快速开始
-
-### 最小可行代码示例
-
-```python
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import time
-
-# 启动浏览器
-driver = webdriver.Chrome()
-
-# 打开网页
-driver.get("https://example.com")
-
-# 找到输入框并输入
-driver.find_element(By.ID, "username").send_keys("your_username")
-driver.find_element(By.ID, "password").send_keys("your_password")
-
-# 点击登录
-driver.find_element(By.ID, "login").click()
-
-# 等待加载
-time.sleep(3)
-
-# 下载报表
-driver.find_element(By.ID, "download").click()
-
-print("RPA 任务完成！")
-```
-
----
-
-## 六、学习路径建议
-
-### 第一阶段：基础（1-2 周）
-- Python 基础语法
-- Selenium 网页自动化
-- Pandas 数据处理
-
-### 第二阶段：进阶（2-4 周）
-- PyAutoGUI 桌面自动化
-- OCR 文字识别
-- 异常处理与日志
-
-### 第三阶段：实战（1-2 个月）
-- 完整业务流程自动化
-- 与 AI 大模型结合
-- 打包部署与维护
-
----
-
-## 七、推荐工具链
+## 工具链
 
 ```
 需求描述 → AI 生成代码 → 本地调试 → 定时调度 → 监控告警
-    ↑                                                    ↓
-    └────────────── 持续优化迭代 ←───────────────────────┘
+    ↑                                            ↓
+    └───────────── 持续优化迭代 ←─────────────────┘
 ```
-
----
-
-*最后更新：2026年3月*
