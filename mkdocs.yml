@@ -17,15 +17,10 @@ nav:
     - 关于实记: story/index.md
     - PCA 驱动的工艺告警系统重构：从报警洪水到智能预警的工业级实践: story/PCA/index.md
     - 线平衡: story/line load/index.md
-    - 实记2: story/story2/index.md
-    - 实记3: story/story3/index.md
   - AI:
     - 关于AI: ai/index.md
     - Prompt Inject for Expert dataset: ai/prompt-inject.md
     - GBT 42131-2022: ai/GBT+42131-2022.md
-  - 运筹学:
-    - 关于运筹学: yunchou/index.md
-    - 教学: yunchou/teach/index.md
   - 概率论:
     - 关于概率论: gailvlun/index.md
     - 看见概率: gailvlun/seeing-theory.md
@@ -50,7 +45,6 @@ nav:
     - 关于CAD: cad/index.md
     - CAD绘图: cad/draw/index.md
   - HACCP: haccp/index.md
-  - 配置: config/index.md
 
 theme:
   name: material
