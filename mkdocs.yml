@@ -174,10 +174,13 @@ extra:
   cache:
     enabled: true
     duration: 86400  # 24小时
+  
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
 
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
+extra_dirs:
+  - assets
 
 watch:
   - docs
