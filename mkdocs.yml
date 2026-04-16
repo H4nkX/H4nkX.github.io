@@ -15,7 +15,7 @@ nav:
   - About: about/index.md
   - 实记:
     - 关于实记: story/index.md
-    - PCA 驱动的工艺告警系统重构：从报警洪水到智能预警的工业级实践: story/story1/index.md
+    - PCA 驱动的工艺告警系统重构：从报警洪水到智能预警的工业级实践: story/PCA/index.md
     - 线平衡: story/line load/index.md
     - 实记2: story/story2/index.md
     - 实记3: story/story3/index.md
@@ -42,6 +42,13 @@ nav:
   - 数据分析:
     - 关于数据分析: data-analysis/index.md
     - Power BI 速成手册: data-analysis/Power BI 速成手册.md
+  - 工业控制:
+    - 关于工业控制: industrial-control/index.md
+    - VNC连接工控设备: industrial-control/VNC/index.md
+  - CAD:
+    - 关于CAD: cad/index.md
+    - CAD绘图: cad/draw/index.md
+  - HACCP: haccp/index.md
   - 配置: config/index.md
 
 theme:
